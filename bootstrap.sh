@@ -45,4 +45,4 @@ echo "Build project..."
 # come back to main workspace directory
 cd $DIR
 
-catkin_make
+catkin build
