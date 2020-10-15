@@ -4,10 +4,7 @@ echo "Bootstraping Pilsbot workspace"
 
 # Get directory of this bootstrap file
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
-# Source ROS
 cd $DIR
-source /opt/ros/melodic/setup.bash
 
 # Create directory that will store the git repositories
 mkdir -p src/
