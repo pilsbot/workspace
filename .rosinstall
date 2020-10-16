@@ -4,3 +4,6 @@
 - git:
     uri: https://github.com/pilsbot/ros_app_bridge
     local-name: app_bridge
+- git:
+    uri: https://github.com/pilsbot/lighting
+    local-name: lighting

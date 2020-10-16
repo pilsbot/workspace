@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd ${PILSBOT_ROOT_DIR}
-
+git pull
+cp .rosinstall src/.rosinstall
 # update the workspace
 wstool update -t src $1
