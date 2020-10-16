@@ -9,14 +9,15 @@ git pull
 # from the src/ directory. If the files differs, check if the user wants to
 # overwrite the local changes with the newly updated .rosinstall file
 if cmp -s .rosinstall src/.rosinstall ; then
-    echo 'No changes in .rosinstall'
+    echo -e '\e[32mNo changes in .rosinstall\e[0m'
 else
     printf 'Overwrite src/.rosinstall with newly changed .rosinstall? [Y/n] '
     read response
-    if [ $response = 'y' ] | [ $response = 'Y' ] | [ -z $response  ]; then
+    if [[ $response = 'y' ]] || [[ $response = 'Y' ]] || [[ -z $response ]]; then
       cp .rosinstall src/.rosinstall
+      echo -e '\e[33mOverwrite src/.rosinstall\e[0m'
     else
-      echo 'src/.rosinstall differs from .rosinstall but changes were not overwritten'
+      echo -e '\e[31msrc/.rosinstall differs from .rosinstall but changes were not overwritten\e[0m'
     fi
 fi
 
