@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Get directory of this bootstrap file
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-cd $DIR/../
+cd ${PILSBOT_ROOT_DIR}
+
 catkin build $1

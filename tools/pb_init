@@ -5,4 +5,5 @@ cd ${PILSBOT_ROOT_DIR}
 # init workspace from .rosinstall file
 wstool init src ${PILSBOT_ROOT_DIR}.rosinstall $1
 
-# TODO: add other .rosinstall files
+# TODO: add other .rosinstall files with
+# wstool merge -t src PATH_TO_ROSINSTALL_FILE.rosinstall
