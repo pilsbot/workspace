@@ -26,6 +26,7 @@ clone_packages () {
         eval local $ATTRIBUTES
         echo "git clone $url -b $branch $name"
         git clone $url -b $branch $name
+        cd $name && git submodule update --init --recursive && cd ..
     elif [[ $TAG_NAME = "env" ]] ; then
         eval local $ATTRIBUTES
         echo "source $path"
