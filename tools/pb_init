@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ${PILSBOT_ROOT_DIR}
+
+# init workspace from .rosinstall file
+wstool init src ${PILSBOT_ROOT_DIR}.rosinstall $1
+
+# TODO: add other .rosinstall files

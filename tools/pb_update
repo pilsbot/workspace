@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ${PILSBOT_ROOT_DIR}
+
+# update the workspace
+wstool update -t src $1

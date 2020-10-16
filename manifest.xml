@@ -1,5 +1,0 @@
-<manifest>
-  <env path="/opt/ros/melodic/setup.bash"/>
-  <package name="hardware" branch="master" url="git@github.com:pilsbot/pilsbot_hw_ros.git" />
-  <package name="app_bridge" branch="master" url="git@github.com:pilsbot/ros_app_bridge.git"/>
-</manifest>

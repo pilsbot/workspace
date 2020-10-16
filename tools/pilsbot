@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ $1 = "help" ]]; then
+  pb_help $2
+elif [[ $1 = "update" ]]; then
+  pb_update $2
+elif [[ $1 = "init" ]]; then
+  pb_init $2
+elif [[ $1 = "build" ]]; then
+  pb_build $2
+fi

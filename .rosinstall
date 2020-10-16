@@ -1,0 +1,6 @@
+- git:
+    uri: https://github.com/pilsbot/pilsbot_hw_ros
+    local-name: hardware
+- git:
+    uri: https://github.com/pilsbot/ros_app_bridge
+    local-name: app_bridge

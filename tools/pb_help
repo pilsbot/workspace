@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ -z "$1" ]]; then
+  echo "options:"
+  echo "    pilsbot build"
+  echo "    pilsbot help"
+  echo "    pilsbot init"
+  echo "    pilsbot update"
+fi
