@@ -1,7 +1,24 @@
 #!/bin/bash
 
 cd ${PILSBOT_ROOT_DIR}
+
+# update the workspace to see if there are changes in the main .rosinstall file
 git pull
-cp .rosinstall src/.rosinstall
+
+# Compare the .rosinstall file from root directory with the .rosinstall file
+# from the src/ directory. If the files differs, check if the user wants to
+# overwrite the local changes with the newly updated .rosinstall file
+if cmp -s .rosinstall src/.rosinstall ; then
+    echo 'No changes in .rosinstall'
+else
+    printf 'Overwrite src/.rosinstall with newly changed .rosinstall? [Y/n] '
+    read response
+    if [ $response = 'y' ] | [ $response = 'Y' ] | [ -z $response  ]; then
+      cp .rosinstall src/.rosinstall
+    else
+      echo 'src/.rosinstall differs from .rosinstall but changes were not overwritten'
+    fi
+fi
+
 # update the workspace
 wstool update -t src $1
