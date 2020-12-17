@@ -1,7 +1,7 @@
 ## How to bootstrap the Pilsbot project
 
 - Install ROS2. See [The ROS2 installation page](https://index.ros.org/doc/ros2/Installation/)
-  - Don't forget to `source /opt/ros/your_ros_version/setup.bash` (only needed for the installation)
+  - Don't forget to `source /opt/ros/your_ros_version/setup.bash`
 - Install [vcstool](https://github.com/dirk-thomas/vcstool)
 - `git clone --branch ros2 git@github.com:pilsbot/workspace.git pilsbot && cd pilsbot`
 - `source env.sh`
@@ -16,6 +16,10 @@
 ### Update packages
 
 - `pilsbot update`
+
+### build packages
+
+- `pilsbot build`
 
 ### Start things
 

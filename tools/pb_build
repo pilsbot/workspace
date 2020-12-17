@@ -8,5 +8,9 @@ cd ${PILSBOT_ROOT_DIR}
 
 colcon build $1
 
+# source the environment again because install/setup.bash exists (what is not
+# always the case after a 'pilsbot clean' or when building for the first time)
+source env.sh
+
 # Go back to the directory where the user was in before this action.
 cd $DIR_BEFORE_ACTION
