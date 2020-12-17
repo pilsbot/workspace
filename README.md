@@ -6,7 +6,7 @@
 - `git clone --branch ros2 git@github.com:pilsbot/workspace.git pilsbot && cd pilsbot`
 - `source env.sh`
 - `pilsbot init`
-- `pilsbot build`
+- `pilsbot build` Note that you can pass arguments like `pilsbot build --symlink-install`
 
 ### Update packages
 
