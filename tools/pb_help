@@ -3,6 +3,7 @@
 if [[ -z "$1" ]]; then
   echo "options:"
   echo "    pilsbot build"
+  echo "    pilsbot clean"
   echo "    pilsbot help"
   echo "    pilsbot init"
   echo "    pilsbot launch your_launch_file.launch"

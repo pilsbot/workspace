@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Save current user directory location in order to go back there after
+# this action
+DIR_BEFORE_ACTION=$PWD
+
+cd ${PILSBOT_ROOT_DIR}
+
+rm -rf log/
+rm -rf install/
+rm -rf build/
+
+# Go back to the directory where the user was in before this action.
+cd $DIR_BEFORE_ACTION

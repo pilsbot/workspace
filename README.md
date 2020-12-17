@@ -8,19 +8,25 @@
 - `pilsbot init`
 - `pilsbot build` Note that you can pass arguments like `pilsbot build --symlink-install`
 
-### Update packages
+### Source project environment variables
 
 - `source env.sh`
+- If the `install` directory does not exist, call `pilsbot build` and `source env.sh` again.
+
+### Update packages
+
 - `pilsbot update`
 
 ### Start things
 
-- `source env.sh`
 - `pilsbot launch what_you_want_to_launch.launch`
+
+### Clean workspace
+
+- `pilsbot clean`
 
 ### Get some help (lel)
 
-- `source env.sh`
 - `pilsbot help`
 
 ## How to adapt the modules to import:
