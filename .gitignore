@@ -1,3 +1,6 @@
+.catkin_workspace
+install/
+
 .catkin_tools/
 src/
 devel/
