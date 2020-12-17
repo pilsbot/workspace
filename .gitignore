@@ -1,5 +1,6 @@
 .catkin_workspace
 install/
+log/
 
 .catkin_tools/
 src/

@@ -1,29 +1,39 @@
 #!/bin/bash
 
+# Save current user directory location in order to go back there after 
+# this action
+DIR_BEFORE_ACTION=$PWD
+
 cd ${PILSBOT_ROOT_DIR}
 
 # update the workspace to see if there are changes in the main .rosinstall file
 git pull
 
-# Compare the .rosinstall file from root directory with the .rosinstall file
-# from the src/ directory. If the files differs, check if the user wants to
-# overwrite the local changes with the newly updated .rosinstall file
-if cmp -s .rosinstall src/.rosinstall ; then
-    echo -e '\e[32mNo changes in .rosinstall\e[0m'
-else
-    printf 'Overwrite src/.rosinstall with newly changed .rosinstall? [Y/n] '
-    read response
-    if [[ $response = 'y' ]] || [[ $response = 'Y' ]] || [[ -z $response ]]; then
-      cp .rosinstall src/.rosinstall
-      echo -e '\e[33mOverwrite src/.rosinstall\e[0m'
-    else
-      echo -e '\e[31msrc/.rosinstall differs from .rosinstall but changes were not overwritten\e[0m'
-    fi
+SRC_DIR="src/"
+if [ -d "$SRC_DIR" ]; then
+  # Compare the .rosinstall file from root directory with the .rosinstall file
+  # from the src/ directory. If the files differs, check if the user wants to
+  # overwrite the local changes with the newly updated .rosinstall file
+  if cmp -s .rosinstall src/.rosinstall ; then
+      echo -e '\e[32mNo changes in .rosinstall\e[0m'
+  else
+      printf 'Overwrite src/.rosinstall with newly changed .rosinstall? [Y/n] '
+      read response
+      if [[ $response = 'y' ]] || [[ $response = 'Y' ]] || [[ -z $response ]]; then
+        cp .rosinstall src/.rosinstall
+        echo -e '\e[33mOverwrite src/.rosinstall\e[0m'
+      else
+        echo -e '\e[31msrc/.rosinstall differs from .rosinstall but changes were not overwritten\e[0m'
+      fi
+  fi
+else # src/ dir does not exist
+  mkdir -p src
+  cp .rosinstall src/.rosinstall
 fi
 
-# Create src directory if this is the first update (init)
-mkdir -p src
 cd src
-
 # init workspace from .rosinstall file
-vcs import < ../.rosinstall
+vcs import < .rosinstall
+
+# Go back to the directory where the user was in before this action.
+cd $DIR_BEFORE_ACTION

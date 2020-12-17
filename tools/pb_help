@@ -5,5 +5,6 @@ if [[ -z "$1" ]]; then
   echo "    pilsbot build"
   echo "    pilsbot help"
   echo "    pilsbot init"
+  echo "    pilsbot launch your_launch_file.launch"
   echo "    pilsbot update"
 fi
