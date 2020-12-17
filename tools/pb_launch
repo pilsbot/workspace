@@ -6,5 +6,7 @@ DIR_BEFORE_ACTION=$PWD
 
 cd ${PILSBOT_ROOT_DIR}
 
+ros2 launch $1
+
 # Go back to the directory where the user was in before this action.
 cd $DIR_BEFORE_ACTION
