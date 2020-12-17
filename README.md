@@ -6,7 +6,11 @@
 - `git clone --branch ros2 git@github.com:pilsbot/workspace.git pilsbot && cd pilsbot`
 - `source env.sh`
 - `pilsbot init`
-- `pilsbot build` Note that you can pass arguments like `pilsbot build --symlink-install`
+- `pilsbot build`
+
+### Get some help (lel)
+
+- `pilsbot help`
 
 ### Source project environment variables
 
@@ -17,9 +21,10 @@
 
 - `pilsbot update`
 
-### build packages
+### Build packages
 
 - `pilsbot build`
+-  Note that you can pass arguments like `pilsbot build --symlink-install`
 
 ### Start things
 
@@ -28,10 +33,6 @@
 ### Clean workspace
 
 - `pilsbot clean`
-
-### Get some help (lel)
-
-- `pilsbot help`
 
 ## How to adapt the modules to import:
 
