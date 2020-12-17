@@ -15,7 +15,6 @@
 ### Source project environment variables
 
 - `source env.sh`
-- If the `install` directory does not exist, call `pilsbot build` and `source env.sh` again.
 
 ### Update packages
 
