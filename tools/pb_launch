@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd ${PILSBOT_ROOT_DIR}

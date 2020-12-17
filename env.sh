@@ -8,5 +8,5 @@ if [[ -f "${PILSBOT_ROOT_DIR}devel/setup.bash" ]]; then
   source ${PILSBOT_ROOT_DIR}devel/setup.bash
 fi
 
-# Add this bin directory in order to use the pilsbot commands
+# Add the tools directory in order to use the pilsbot commands
 export PATH=${PILSBOT_ROOT_DIR}tools/:$PATH

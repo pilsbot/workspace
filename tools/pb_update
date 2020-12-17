@@ -21,5 +21,9 @@ else
     fi
 fi
 
-# update the workspace
-wstool update -t src $1
+# Create src directory if this is the first update (init)
+mkdir -p src
+cd src
+
+# init workspace from .rosinstall file
+vcs import < ../.rosinstall

@@ -8,4 +8,6 @@ elif [[ $1 = "init" ]]; then
   pb_init $2
 elif [[ $1 = "build" ]]; then
   pb_build $2
+elif [[ $1 = "launch" ]]; then
+  pb_launch $2
 fi

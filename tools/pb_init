@@ -1,9 +1,5 @@
 #!/bin/bash
 
-cd ${PILSBOT_ROOT_DIR}
-
-# init workspace from .rosinstall file
-wstool init src ${PILSBOT_ROOT_DIR}.rosinstall $1
-
-# TODO: add other .rosinstall files with
-# wstool merge -t src PATH_TO_ROSINSTALL_FILE.rosinstall
+# TODO: install dependencies, install ros2 and vcs here to simplify
+# the installation, then update the project workspace
+pilsbot update

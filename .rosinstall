@@ -1,9 +1,5 @@
-- git:
-    uri: https://github.com/pilsbot/pilsbot_hw_ros
-    local-name: hardware
-- git:
-    uri: https://github.com/pilsbot/ros_app_bridge
-    local-name: app_bridge
-- git:
-    uri: https://github.com/pilsbot/lighting
-    local-name: lighting
+repositories:
+  perception:
+    type: git
+    url: https://github.com/pilsbot/perception
+    version: master
