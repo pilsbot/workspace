@@ -3,3 +3,7 @@ repositories:
     type: git
     url: https://github.com/pilsbot/perception
     version: master
+  app_com:
+    type: git
+    url: git@github.com:pilsbot/ros_app_bridge
+    version: master
