@@ -7,7 +7,7 @@ repositories:
     type: git
     url: git@github.com:pilsbot/perception
     version: master
-  rosbridge_suite
+  rosbridge_suite:
     type: git 
     url: git@github.com:RobotWebTools/rosbridge_suite
     version: ros2
