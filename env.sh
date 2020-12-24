@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create variable to use for other bash scripts
+# Create variable PILSBOT_ROOT_DIR that will be used in other bash scripts
 export PILSBOT_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/"
 
 # Source the ros specific things if the workspace already initialized
