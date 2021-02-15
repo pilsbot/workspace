@@ -11,3 +11,11 @@ repositories:
     type: git
     url: https://github.com/RobotWebTools/ros2-web-bridge.git
     version: develop
+  pilsbot_simulation:
+    type: git
+    url: git@github.com:pilsbot/pilsbot_simulation.git
+    version: main
+  pilsbot_description:
+    type: git
+    url: git@github.com:pilsbot/pilsbot_description.git
+    version: main
