@@ -9,7 +9,7 @@ elif [[ $1 = "init" ]]; then
 elif [[ $1 = "build" ]]; then
   pb_build $2
 elif [[ $1 = "launch" ]]; then
-  pb_launch $2
+  pb_launch $2 $3
 elif [[ $1 = "clean" ]]; then
   pb_clean
 fi

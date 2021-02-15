@@ -27,7 +27,7 @@
 
 ### Start things
 
-- `pilsbot launch what_you_want_to_launch.launch`
+- `pilsbot launch pilsbot_simulation pilsbot.launch.py`
 
 ### Clean workspace
 
