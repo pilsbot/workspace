@@ -38,7 +38,7 @@ sudo apt-get install python3-vcstool
 # install nvm and nodejs
 npm i rclnodejs
 npm i ws
-sudo apt install -y ros-foxy-gazebo-ros-pkgs ros-foxy-joint-state-publisher ros-foxy-xacro
+sudo apt install -y ros-foxy-gazebo-ros-pkgs ros-foxy-joint-state-publisher ros-foxy-xacro ros-foxy-diff-drive-controller
 
 # the installation, then update the project workspace
 pilsbot update
