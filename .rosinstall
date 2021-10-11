@@ -19,3 +19,7 @@ repositories:
     type: git
     url: git@github.com:pilsbot/pilsbot_description.git
     version: main
+  acker_diff_drive:
+    type: git
+    url: git@github.com:pilsbot/pils_control.git
+    version: master
