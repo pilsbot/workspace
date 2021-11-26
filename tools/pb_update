@@ -33,7 +33,7 @@ fi
 
 cd src
 # init workspace from .rosinstall file
-vcs import < .rosinstall
+vcs import --recursive < .rosinstall
 
 vcs pull
 
