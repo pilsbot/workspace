@@ -35,5 +35,7 @@ cd src
 # init workspace from .rosinstall file
 vcs import < .rosinstall
 
+vcs pull
+
 # Go back to the directory where the user was in before this action.
 cd $DIR_BEFORE_ACTION
