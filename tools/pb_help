@@ -6,6 +6,7 @@ if [[ -z "$1" ]]; then
   echo "    pilsbot clean"
   echo "    pilsbot help"
   echo "    pilsbot init"
-  echo "    pilsbot launch your_launch_file.launch"
+  echo "    pilsbot launch <your_launch_file.launch>"
+  echo "        e.g. pilsbot launch pilsbot_simulation pilsbot.launch.py"
   echo "    pilsbot update"
 fi

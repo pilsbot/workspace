@@ -12,4 +12,8 @@ elif [[ $1 = "launch" ]]; then
   pb_launch $2 $3
 elif [[ $1 = "clean" ]]; then
   pb_clean
+else
+  echo -e "\033[0;31mUnknown command\033[0m '$1'"
+  pb_help
+  exit -1
 fi
