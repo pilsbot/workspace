@@ -8,6 +8,7 @@ if [[ -f "${PILSBOT_ROOT_DIR}install/setup.bash" ]]; then
   source ${PILSBOT_ROOT_DIR}install/setup.bash
 fi
 
+export RCUTILS_COLORIZED_OUTPUT=1
 # Add the tools directory in order to use the pilsbot commands
 export PATH=${PILSBOT_ROOT_DIR}tools/:$PATH
 
