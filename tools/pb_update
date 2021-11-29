@@ -37,5 +37,8 @@ vcs import --recursive < .rosinstall
 
 vcs pull
 
+# in case there are new dependencies
+rosdep install --from-paths ./ --ignore-src -y -r
+
 # Go back to the directory where the user was in before this action.
 cd $DIR_BEFORE_ACTION
