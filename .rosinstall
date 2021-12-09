@@ -23,3 +23,7 @@ repositories:
     type: git
     url: git@github.com:pilsbot/pilsbot_hw_ros.git
     version: foxy-devel
+  rqt_robot_steering_ackermann:
+    type: git
+    url: git@github.com:pilsbot/rqt_robot_steering.git
+    version: ros2-ackermann
