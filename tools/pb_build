@@ -6,6 +6,8 @@ DIR_BEFORE_ACTION=$PWD
 
 cd ${PILSBOT_ROOT_DIR}
 
+source env.sh
+
 colcon build --symlink-install $1
 
 # source the environment again because install/setup.bash exists (what is not
