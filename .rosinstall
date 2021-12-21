@@ -27,3 +27,9 @@ repositories:
     type: git
     url: git@github.com:pilsbot/rqt_robot_steering.git
     version: ros2-ackermann
+  external/apriltag_ros:
+    type: git
+    url: git@github.com:christianrauch/apriltag_ros.git
+  external/apriltag_msgs:
+    type: git
+    url: git@github.com:christianrauch/apriltag_msgs.git
