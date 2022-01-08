@@ -1,3 +1,4 @@
 #!/bin/bash
+source ${PILSBOT_ROOT_DIR}/env.sh
 
 ros2 launch $1 $2
