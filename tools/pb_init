@@ -29,6 +29,7 @@ source /opt/ros/foxy/setup.bash
 sudo apt install -y python3-pip
 pip3 install -U argcomplete
 
+
 # Install VCSTools
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xAB17C654
@@ -39,6 +40,12 @@ sudo apt-get install python3-vcstool
 npm i rclnodejs
 npm i ws
 sudo apt install -y ros-foxy-gazebo-ros-pkgs ros-foxy-joint-state-publisher ros-foxy-xacro ros-foxy-diff-drive-controller ros-foxy-ros2-control ros-foxy-ackermann-msgs ros-foxy-rosbridge-suite
+
+# Install rosdep
+sudo apt install python3-rosdep
+sudo apt install
+sudo rosdep init
+rosdep update
 
 # the installation, then update the project workspace
 pilsbot update
