@@ -31,6 +31,11 @@
 - `pilsbot launch pilsbot_simulation pilsbot.launch.py`
 - `pilsbot launch pilsbot_simulation pilsbot_control_test.launch.py`
 
+### Test things
+1. `rqt`
+2. Plugins->Robot Tools->Robot Steering Akermann
+3. Topic `/pilsbot_velocity_controller/cmd_vel`
+
 ### Clean workspace
 
 - `pilsbot clean`
