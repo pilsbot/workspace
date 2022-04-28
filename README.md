@@ -32,9 +32,11 @@
 - `pilsbot launch pilsbot_simulation pilsbot_control_test.launch.py`
 
 ### Test things
-1. `rqt`
+1. `rqt` (or `rqt --force-discover` if Robot Tools is not shown in step 2)
 2. Plugins->Robot Tools->Robot Steering Akermann
 3. Topic `/pilsbot_velocity_controller/cmd_vel`
+4. You should see something like this:
+![simulation](img/control_pilsbot_in_simulation.png?raw=true "Simulation")
 
 ### Clean workspace
 
